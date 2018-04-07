@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Alumni home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;
+}
+
+ul{ list-style-type:none;}
+.mySlides {display: none"}
+
+
+</style>
+<body>
+<div class="w3-conatainer w3-mobile w3-cell " style= "display:'block'" style="margin-left:25%">
+
+<!-- Navbar -->
+<div class="w3-top w3-conatiner ">
+  <div class="w3-bar w3-white w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+   	<img class="w3-hide-small w3-left w3-rectangle" src="http://www.ncuindia.edu/templates/city_innovates/images/logooo.png" style= "width:30% height:50px">
+    <a href="home.html" style="width:20%" class="w3-bar-item w3-button w3-padding-large w3-orange">Home</a>
+    <a href="aboutus.html" style="width:20%" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About  Us</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="alumni">Alumni  Directory</button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="login.jsp" class="w3-bar-item w3-button">Login/ Register</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+       </div>
+    </div>
+     <a href="viewvacancydetail.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Job Opportunity</a>
+   
+   </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="nav1" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  <a href="login.jsp" class="w3-bar-item w3-button w3-padding-large">Login/Register</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  <a href="viewvacancydetail.jsp" class="w3-bar-item w3-button w3-padding-large">Job Opportunity</a>
+</div>
+<!-- page content -->
+
+</div> 
+  
+<!-- About us -->
+  <div class=" w3-container w3-content w3-padding-64" style="width:800px display:'block'">
+    <h2 class=" w3-xxlarge w3-text-teal " style="margin-top:80px">North Cap University</h2>
+    <p>The NorthCap University was founded in 1996, to promote excellence in Technical and Management education by Educate India Society, registered under the Registration of Societies Act of 1860.
+
+The University was conceived as Institute of Technology and Management in response to the acute deficiency of centres of higher learning in the country as also, the need to develop relevant human capital to meet the technology and management challenges of the 21st century.</p>
+<p class=" w3-xlarge w3-text-orange w3-center w3-serif" >" ABILITY  MOTIVATION  ATTITUDE "</p>
+<p>The founders had a clear and well defined mission - to build an unaided, self - financed University committed to delivering education of internationally recognized standards, a University that would go on to serve as an intellectual resource base in India and the sub-continent.
+</p>
+<h2 class="w3-xxlarge w3-text-teal">Core Values</h2>
+  <hr style="width:50px ;border:5px solid teal" class=" w3-round w3-left"><br>
+  <br>
+  <ul>
+ <li>Integrity in all endeavours.</li><br>
+<li>Humility, compassion and concern for all.</li><br>
+<li>Passion for quality and excellence.</li><br>
+<li>Quest for innovation.</li><br>
+<li>Leadership and Team Spirit.</li><br>
+<li>Autonomy with Accountability.</li><br>
+<li>Perseverance.</li>
+</ul>
+<h2 class="w3-xxlarge w3-text-teal">Vision</h2>
+  <hr style="width:50px ;border:5px solid teal" class="w3-round w3-left"><br>
+  <br>
+  <p>“To be known globally for learning innovations, academic excellence and socially relevant research outcomes; strive to become the preferred destination for students, faculty, employers and collaborators & pride of alumni and the community.”</p>
+</div>
+<script>
+<!-- Automatic Slideshow - change image every 4 seconds-->
+var myIndex = 0;
+
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000);    
+}
+function myFunction() {
+    var x = document.getElementById("nav1");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+</body>
+</html>

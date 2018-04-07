@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=ISO-8859-1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Alumni </title>
+<style>
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.over{
+margin-left:220px;
+padding-left:250px;
+font-size: 30px;
+background-color: teal;
+color:white;
+}
+
+slide{
+margin-left:10px;
+margin-top: 40px ;
+}
+    div::after {
+  content: "";
+  background: url("http://static3.businessinsider.com/image/5363bbd36bb3f743704453f7-1000-750/shutterstock174215792.jpg");
+  height:130%;
+  opacity: 0.07;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+   background-repeat: repeat-y;
+    background-size: cover; 
+}
+
+.purpose{
+color:black;
+padding-top:10px;
+padding-left:10px;
+}
+#content {  
+  width: 100%; 
+  margin-top:20px; 
+} 
+
+#left  { float:left; 
+width:50%;
+margin-left:10px;
+    }
+  
+#right { overflow:hidden; 
+width:40%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;	
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=4&cad=rja&uact=8&ved=0ahUKEwiJ1N-o-b_UAhXKRY8KHYPqDGwQqQIIQSgAMAM&url=http%3A%2F%2Fwww.ndtv.com%2Findia-news%2Findias-49-1-bn-in-farm-loan-waivers-16-times-budget-for-rural-roads-1712553&usg=AFQjCNENJ4SKiXV4_XApuDIwMRAL5puFVg">India now faces $49.1bn Farm Loan</a>
+   <a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=4&cad=rja&uact=8&ved=0ahUKEwiJ1N-o-b_UAhXKRY8KHYPqDGwQqQIIQSgAMAM&url=http%3A%2F%2Fwww.ndtv.com%2Findia-news%2Findias-49-1-bn-in-farm-loan-waivers-16-times-budget-for-rural-roads-1712553&usg=AFQjCNENJ4SKiXV4_XApuDIwMRAL5puFVg">India now faces $49.1bn Farm Loan</a>
+  <a href="http://economictimes.indiatimes.com/news/defence/india-under-modi-has-shed-some-of-the-non-aligned-philosophy-us-democratic-senator/articleshow/59157790.cms">India under Modi some alleged philosphy</a>
+  <a href="http://www.firstpost.com/sports/india-vs-bangladesh-live-score-champions-trophy-2017-live-cricket-score-tigers-crawl-to-2647-after-solid-start-3647359.html">India v/s Bangladesh</a>
+  
+</div>
+
+<div id="main" style="margin-top:10px; padding-top:20px; ">
+  <div class="w3-bar  w3-card-2  w3-conatiner" style="position:relative">
+     	<img class="w3-hide-small w3-left w3-rectangle" src="http://www.ncuindia.edu/templates/city_innovates/images/logooo.png" style= "width:30% height:50px">
+  
+    <p class="over w3-hide-small w3-wide">ALUMNI</p>
+    </div>
+<div class="w3-top w3-conatiner" style="position:relative">
+  <div class="w3-bar w3-white w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <p class="w3-hide-medium w3-hide-large" style="padding-left:20px"><b>Welcome !!</b></p>
+    <a href="home.html" style="width:20%; margin-left:9px;background-color:teal" class="w3-bar-item w3-hide-small w3-button w3-padding-large ">Home</a>
+    <a href="aboutus.html" style="width:20%" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About  Us</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button"  title="alumni">Alumni  Directory</button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="login.jsp" class="w3-bar-item w3-button">Login/ Register</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      </div>
+    </div>
+    <a href="viewvacancydetailhome.jsp" style="width:20%" class="w3-bar-item w3-button w3-padding-large w3-hide-small ">Job Opportunity</a>
+    </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="nav" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  <a href="login.jsp" class="w3-bar-item w3-button w3-padding-large">Login/Register</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  <a href="viewvacancydetailhome.jsp" class="w3-bar-item w3-button w3-padding-large">Job Opportunity</a>
+</div>
+  <span  style="padding-top: 10px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<u> News & Updates</u></span>
+<div id="content">
+<div id="left" class="w3-hide-small">
+  <img class="mySlides slide" src="http://schoolbook.getmyuni.com/assets/images/rev_img/33222__19714/149140933521-49-08-140812125031_Screenshot_75.png"
+  style="width:380px; height: 300px">
+  <img class="mySlides slide" src="https://i.ytimg.com/vi/7bubYcXYJ6I/maxresdefault.jpg"
+  style="width:380px; height: 300px">
+  <img class="mySlides slide" src="https://pbs.twimg.com/media/DBpAkrIUIAEuEgw.jpg"
+  style="width:380px; height: 300px">
+   <img class="mySlides slide" src="http://www.ncuindia.edu/templates/city_innovates/img/infobanner.jpg"
+  style="width:380px; height: 300px">
+</div>
+<div class="purpose" id="right">
+  <h2 class="w3-xxlarge w3-teal-orange"><b>Objective</b></h2>
+  <p>The proposed system is for making easier to manage the rapidly growing database of our college.</p> 
+  <p>Leads for placement of the students.</p>
+  <p>Opportunities for the summer internship of our students.</p>
+  <p>Technical support with the help of invited talks to our students</p>
+  <p>Feedback for upgrading our academic curriculum to meet the industry requirements.</p>
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+ 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+     
+</body>
+</html> 

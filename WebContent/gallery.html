@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin:auto;
+  margin-top: 200px;
+}
+div::after {
+  content: "";
+  background: url(https://thumbs.dreamstime.com/t/abstract-blue-white-d-chaotic-polygonal-surface-background-digital-texture-48136525.jpg) center;
+ 
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="w3-conatainer w3-mobile w3-cell " style= "display:'block'" style="margin-left:25%">
+
+<!-- Navbar -->
+<div class="w3-top w3-conatiner ">
+  <div class="w3-bar w3-white w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+   	<img class="w3-hide-small w3-left w3-rectangle" src="http://www.ncuindia.edu/templates/city_innovates/images/logooo.png" style= "width:30% height:50px">
+    <a href="home.html" style="width:20%" class="w3-bar-item w3-button w3-padding-large w3-orange">Home</a>
+    <a href="aboutus.html" style="width:20%" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About  Us</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="alumni">Alumni  Directory</button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="login.jsp" class="w3-bar-item w3-button">Login/ Register</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+       </div>
+    </div>
+     <a href="viewvacancydetail.jsp" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Job Opportunity</a>
+   
+   </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="nav1" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="aboutus.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  <a href="login.jsp" class="w3-bar-item w3-button w3-padding-large">Login/Register</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  <a href="viewvacancydetail.jsp" class="w3-bar-item w3-button w3-padding-large">Job Opportunity</a>
+</div>
+<!-- page content -->
+
+</div> 
+  
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Ze1E4o-Aui60P0LWrNjbwPv8FTOMwj9_1ECwJjekSPmG03CeFA" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="http://img01.ibnlive.in/ibnlive/uploads/2014/08/tcs-shares-up-on-agreement-with-mitsubishi-corp_210414014041.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="https://media.glassdoor.com/l/c9/1d/7d/b9/deloitte-office.jpg" style="width:100%">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="http://static.dnaindia.com/locality/sites/default/files/styles/news_slider/public/newsimage/IMG-20151119-WA0021.jpg?itok=FuoT-i-9" style="width:100%">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="https://www.naukri.com/hotjobs/images/social/libsysjul15.gif" style="width:100%">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="http://www.subros.com/images/gallery/nodia_2.jpg" style="width:100%">
+ </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function myFunction() {
+    var x = document.getElementById("nav1");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+</body>
+</html> 

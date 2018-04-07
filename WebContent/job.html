@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Job Opportunity</title>
+<style>
+input[type=text], select, textarea ,input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] ,input[type=reset],input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3 class="w3-wide w3-text-teal w3-center w3-xxlarge">Job Opportunity</h3>
+
+<div class="container">
+  <form action="NewVacancyAction" method="post">
+    <label>Company Name</label>
+    <input type="text" id="cname" name="cname" required>
+
+    <label>Profile</label>
+    <input type="text" id="prof" name="profile" required>
+	 <label>Vacancy position</label>
+    <input type="text" id="v_pos" name="pos" required> 
+    <label>Description</label>
+    <textarea id="desc" name="describe" placeholder="Tell something about the company... (word limit 150 words)" style="height:200px" required></textarea>
+    <label>Category</label>
+    <select name="category" required>
+   									<optgroup label="Top Categories"></optgroup>
+									<option>Accounts, Finance, Tax, CS, Audit</option>
+									<option>Banking, Insurance</option>
+									<option>Engineering Design, R&D</option>
+									<option>HR / Administration, IR</option>
+									<option>ITES/BPO/KPO, Customer Service, Ops.</option>
+									<option>Marketing, Advertising, MR, PR</option>
+									<option>Production, Maintenance, Quality</option>
+									<option>Sales, BD</option>
+									<option>Site Engg., Project Management</option>
+									<option>Telecom</option>
+									<optgroup label="IT Software Categories"></optgroup>
+									<option>Application Programming, Maintenance</option>
+									<option>Client Server</option>
+									<option>DBA, Datawarehousing</option>
+									<option>E-Commerce, Internet Technologies</option>
+									<option>Embedded/EDA/VLSI/ASIC/Chip Design</option>
+									<option>ERP, CRM</option>
+									<option>Mainframe</option>
+									<option>Middleware</option>
+									<option>Mobile</option>
+									<option>Network Administration, Security</option>
+									<option>QA & Testing</option>
+									<option>System Programming</option>
+									<option>Systems, EDP, MIS</option>
+									<option>Other</option>
+									<option>Architecture, Interior Design</option>
+									<option>Content, Journalism</option>
+									<optgroup label="More Categories"></optgroup>
+									<option>Corporate Planning, Consulting</option>
+									<option>Export, Import, Merchandising</option>
+									<option>Fashion, Garments, Merchandising</option>
+									<option>Freshers, Trainee Jobs</option>
+									<option>Guards, Security Services</option>
+									<option>Healthcare, Medical, R&D</option>
+									<option>Hotels, Restaurants</option>
+									<option>IT-Support, Telecom, Hardware </option>
+									<option>Legal</option>
+									<option>NGO, Government, Defence Jobs</option>
+									<option>Overseas, International Jobs</option>
+									<option>Packaging</option>
+									<option>Pharma, Biotech</option>
+									<option>Purchase, Logistics, Supply Chain</option>
+									<option>Retailing</option>
+									<option>Secretary, Front Off, Data Entry</option>
+									<option>Self Employed, Consultants</option>
+									<option>Teaching, Education</option>
+									<option>Telecom Software</option>
+									<option>Top Management- IT Jobs</option>
+									<option>Top Management- Non IT Jobs</option>
+									<option>Travel, Ticketing, Airlines</option>
+									<option>TV, Films, Production</option>
+									<option>Web, Graphic Design, Visualiser</option>
+									</select>
+     <label>Location</label>
+    <input type="text" id="loc" name="location" required>
+    <label>Desired Profile</label>
+    <input type="text" id="dprof" name="dprof" required>
+    <label>Experience</label>
+    <input type="text" id="ex" name="ex" required> 
+    <label>Created Date</label>
+    <input type="text" id="cdate" name="cdate" required> 
+    <label>Expiry Date</label>
+    <input type="text" id="edate" name="edate" required> 
+    <label>Contact Person</label>
+    <input type="text" id="cp" name="cp" required> 
+    <label>Designation</label>
+    <input type="text" id="desig" name="desig" required>
+    <label>Phone</label>
+    <input type="text" id="mob" name="mob" >
+    <label>Email</label>
+    <input type="text" id="em" name="em" required>
+    <input type="submit" value="Submit">
+    <input name="Input2" type="reset" value="Clear">
+    <input type="button" value="Back" onclick="myfunc()">
+    
+  </form>
+</div>
+ 
+                    <script>
+	
+                    function myfunc(){
+                    	location.href = 'main.jsp';
+                    }
+                    function preventback(){
+                    	window.history.forward();
+                    }
+                    setTimeout("preventback()",0);
+                    window.onunload=function(){ null };
+ 
+
+                    </script> 
+</body>
+</html>

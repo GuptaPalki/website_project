@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation=" http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <element>
+  <display-name>alumni</display-name>
+  <servlet>
+    <servlet-name>Data</servlet-name>
+    <servlet-class>alumni.Data</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Data</servlet-name>
+    <url-pattern>/Data</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Loginservlet</servlet-name>
+    <servlet-class>alumni.Loginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginservlet</servlet-name>
+    <url-pattern>/Loginservlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ForgotpswAction</servlet-name>
+    <servlet-class>alumni.ForgotpswAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotpswAction</servlet-name>
+    <url-pattern>/ForgotpswAction</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>NewVacancyAction</servlet-name>
+    <servlet-class>alumni.NewVacancyAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewVacancyAction</servlet-name>
+    <url-pattern>/NewVacancyAction</url-pattern>
+  </servlet-mapping>
+ <servlet>
+    <servlet-name>UpdateProfileAction</servlet-name>
+    <servlet-class>alumni.UpdateProfileAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProfileAction</servlet-name>
+    <url-pattern>/UpdateProfileAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Batchdata</servlet-name>
+    <servlet-class>alumni.Batchdata</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Batchdata</servlet-name>
+    <url-pattern>/Batchdata</url-pattern>
+  </servlet-mapping>
+   
+  </element>
+</web-app>
